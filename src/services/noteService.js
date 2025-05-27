@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api/notes";
+const API_URL = import.meta.env.VITE_API_URL || "https://backend-notes-34zd.onrender.com/api/notes";
 
 const getNotes = async () => {
   const res = await axios.get(API_URL);

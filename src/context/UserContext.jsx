@@ -8,7 +8,7 @@ export const UserProvider = ({ children }) => {
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
-      fetch("http://localhost:5000/api/auth/userData", {
+      fetch("https://backend-notes-34zd.onrender.com/api/auth/userData", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ token }),

@@ -49,7 +49,7 @@ const Login = () => {
 
         // Fetch user data with token
         const userRes = await fetch(
-          "http://localhost:5000/api/auth/userData",
+          "https://backend-notes-34zd.onrender.com/api/auth/userData",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
